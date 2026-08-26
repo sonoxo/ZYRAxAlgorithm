@@ -1,3 +1,42 @@
+<div align="center">
+
+<img width="100%" src="docs/assets/sonoxo-ecosystem-orbit.svg" alt="FEED INTELLIGENCE animated ecosystem flow" />
+
+# FEED INTELLIGENCE
+
+### A feed request gathers viewer context, retrieves candidate posts, predicts useful actions, filters ineligible content, and returns an ordered feed.
+
+[Start here](#start-here) · [Original project documentation](#original-project-documentation)
+
+</div>
+
+## Start here
+
+You do not need to understand the whole codebase first. Follow the illuminated path in the graphic:
+
+**01 — Read viewer context** →  **02 — Retrieve candidates** →  **03 — Score predictions** →  **04 — Apply filters** →  **05 — Assemble the feed**
+
+| What you are looking at | Plain-English meaning |
+|---|---|
+| **Input** | What the user or system supplies |
+| **Core** | The repository’s main processing loop |
+| **Guardrails** | Configuration, policy, filters, or approval boundaries |
+| **Output** | The result the system returns or deploys |
+| **Proof** | Tests, reports, previews, logs, or other visible evidence |
+
+> **Status, stated plainly:** This fork preserves the upstream X algorithm source, documentation, history, attribution, and license. Sonoxo’s visual explains the existing pipeline.
+
+<details>
+<summary><strong>Accessibility and motion</strong></summary>
+
+The hero is a native SVG with descriptive text. Animation automatically stops when your device enables **Reduce Motion**. No JavaScript, tracking code, video autoplay, or external image host is required.
+
+</details>
+
+---
+
+## Original project documentation
+
 # X For You Feed Algorithm
 
 This repository contains the core code that determines which posts a viewer sees in the **For You** feed on X. It combines in-network content (from accounts the viewer follows) with out-of-network content (discovered through ML-based retrieval and other mechanisms), filters content based on a variety of inputs, and ranks posts using a transformer model.
